@@ -8,5 +8,4 @@ function solution(inputArray) {
     }
   }
   return largestProduct;
-
 }

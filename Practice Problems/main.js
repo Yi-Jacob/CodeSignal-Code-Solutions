@@ -68,3 +68,29 @@ function sumAll(numbers) {
   }
   return sum;
 }
+
+// Level 7
+
+function difference(string) {
+  var strSplit = string.split(' ');
+  var longestWord = 0;
+  var shortestWord = strSplit[0].length;
+  var difference = longestWord - shortestWord
+  for (var i = 0; i < strSplit.length; i++) {
+    if (strSplit[i].length > longestWord) {
+        longestWord = strSplit[i].length;
+      } else {
+      shortestWord = strSplit[i].length;
+      }
+    }
+  return difference
+}
+
+// Level 8
+
+/* given a list of numbers, get the indexes of the pair of adjacent numbers with the highest sum */
+
+function largestSum(array) {
+  var max = Math.max(array)
+  return max
+}

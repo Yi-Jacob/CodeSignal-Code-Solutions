@@ -50,3 +50,31 @@ function solution(statues) {
   }
   return statuesNeeded;
 }
+
+
+// Level 7
+/*
+assign a variable to the hold the values
+loop through the array
+if the current index is less than or equal to the prevrious index increment the count
+if the counter is greater than 1 return false
+if the current index is less than the previous index and the next index is less than the previous index
+return false
+or return true if it passes
+*/
+
+function solution(sequence) {
+  var found = 0;
+  for (var i = 0; i < sequence.length; i++) {
+    if (sequence[i] <= sequence[i - 1]) {
+      found++;
+      if (found > 1) {
+        return false;
+      }
+      if (sequence[i] <= sequence[i - 2] && sequence[i + 1] <= sequence[i - 1]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}

@@ -9,3 +9,8 @@ function solution(inputArray) {
   }
   return largestProduct;
 }
+
+// Level 5
+function solution(n) {
+  return n * n + (n - 1) * (n - 1)
+}

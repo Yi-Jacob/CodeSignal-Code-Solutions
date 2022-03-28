@@ -94,3 +94,23 @@ function largestSum(array) {
   var max = Math.max(array)
   return max
 }
+
+// How to map without map
+function map(array, transform) {
+  var mapped = []
+  for (var i = 0; i < array.length; i++) {
+    mapped.push(transform(array[i]))
+  }
+  return mapped
+}
+
+// How to filter with no filter
+function filter(array, predicate) {
+  var filtered = []
+  for (var i = 0; i < array.length; i++) {
+    if (predicate(array[i])) {
+      filtered.push(array[i])
+    }
+  }
+  return filtered
+}
